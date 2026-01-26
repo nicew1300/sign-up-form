@@ -64,6 +64,7 @@ img {
     background-color: rgb(28, 26, 27);
     font-size: 2rem;
     font-weight: 10;
+    color: white;
     text-shadow: 0 0 5px cyan;
     flex-grow: 1;
     padding: 1rem;
@@ -80,6 +81,78 @@ span {
     text-shadow: 0 0 5px rgb(0, 255, 0);
 }
 
+/* FORM STYLING below!! */
+
 form {
-    text-shadow: 0 0 5px blue;
+    display: flex;
+    flex-wrap: wrap; /* allows items to go to the next line */
+    gap: 1.5rem;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+/* input boxes */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* this makes two items fit per row, 45% width and then plus the gap
+    and because of wrap, they wrap fax fr */
+    width: 45%; 
+}
+
+label {
+    color: white;
+    text-shadow: 0 0 10px rgb(255, 255, 0);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    padding: 0.8rem;
+    color: white;
+    font-family: "juice";
+    font-size: 1rem;
+}
+
+/* okay so this basically makes it so that the boxes arent red on load, :required targets
+    well required fields, invalid when its invalid duh, and then :not(:focus) basically when its
+    not being focused, and then the not placeholder-shown when the placeholder isnt being shown
+    which means that the user typed something fax fr lol its straight up readable idk why im making
+    this comment 
+*/
+input:required:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #ff004c;
+    box-shadow: 0 0 10px #ff004c;
+}
+
+input:required:valid {
+    border-color: cyan;
+    box-shadow: 0 0 10px cyan;
+}
+
+button {
+    width: fit-content; /* fit-content is just that it fits the content lol, means that its only
+                        as wide as the content, "JOIN THE ABYSS" plus the padding i think*/
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: blueviolet;
+    color: white;
+    font-family: "juice";
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 15px blueviolet;
+    /* makes it glowy :O */
+    text-shadow: 0 0 5px white;
+}
+
+button:hover {
+    /* a lil brighter when its being hovered over */
+    background-color: #a333ff;
+    box-shadow: 0 0 25px #a333ff;
 }
