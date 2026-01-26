@@ -96,8 +96,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    /* this makes two items fit per row, 45% width and then plus the gap
-    and because of wrap, they wrap fax fr */
+    /* this makes two items fit per row, 45% width + 45% width and then plus the gap
+    and because of wrap, they wrap fax fr, explained in more detail in the README file*/
     width: 45%; 
 }
 
