@@ -54,7 +54,7 @@ img {
     width: 34%;
     height: 100%;
     box-shadow: 1px 0 20px blueviolet;
-    z-index: 1;
+    z-index: 1; /* for it to be on top and make the box shadow visible*/
 }
 
 
@@ -78,4 +78,8 @@ em {
 span {
     font-weight: bold;
     text-shadow: 0 0 5px rgb(0, 255, 0);
+}
+
+form {
+    text-shadow: 0 0 5px blue;
 }

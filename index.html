@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
+    <link rel="icon" href="icon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,13 +14,36 @@
     <p><em><b>This is not a real online service!</b></em></p>
 
     <div class="wrapper">
-        <img src="image.jpg" alt="Image by Haithem Ferdi on Unsplash">
+        <img src="image.jpg" alt="Album cover Outsiders, Juice WRLD's unreleased album">
 
         <div class="text">
-            <p>This is a site created for the real <span>Outsiders</span><br> to talk with other fellow <span>Juice WRLD</span> fans. <br><br>
+            <p>This is a site created for the real <span>Outsiders</span><br> to talk with other fellow <span>Juice WRLD</span> fans. <br>
                 Sign Up to be a part of <span>The Abyss.</span>
             </p>
+            <br>
+            <form>
+
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required pattern="(/^[A-Za-z]+$/)">
+
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" required pattern="(/^[A-Za-z]+$/)">
+
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">PHONE NUMBER</label>
+            <input type="number" name="phone" id="phone" required pattern="^\d*$">
+
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" required>
+
+            <label for="conf-pass">CONFIRM PASSWORD</label>
+            <input type="password" name="conf-pass" id="conf-pass" required>
+            
+        </form>
         </div>
+
     </div>
 </body>
 
